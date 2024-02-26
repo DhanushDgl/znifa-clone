@@ -1,0 +1,304 @@
+.features-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.features-section .features-container{
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.features-section .features-title{
+    text-align: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55px;
+}
+
+.features-section .features-head{
+    margin-bottom: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 44px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: #212529;
+}
+
+.features-section .features-grid{
+    margin: 0 -15px;
+    width: -webkit-fill-available;
+}
+
+.features-section .features-grid-item{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.features-section .features-content-box{
+    visibility: visible;
+    animation-duration: 1500ms;
+    animation-delay: 0ms;
+    animation-name: fadeInUp;
+    background-color: #fafafb;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 90px 35px 70px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.features-section .features-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #221638;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: matrix(0, 0, 0, 1, 0, 0);
+    transform-origin: right 50% 0px;
+}
+
+.features-section .features-overlay .active{
+    transform: translate3d(0px, 0px, 0px) scale(1, 1);
+}
+
+.features-section .features-icon{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    background-color: #80c54d;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.features-section .features-icon-two{
+    background-color: #4267d1;
+}
+
+.features-section .features-icon-three{
+    background-color: #ca8220;
+}
+
+.features-section .features-icon-image{
+    position: absolute !important;
+    left: 0;
+    right: 0;
+    top: 50% !important;
+    transform: translateY(-50%);
+    margin: auto;
+    max-width: 50px;
+    max-height: 45px;
+}
+
+.features-section .features-card-head{
+    letter-spacing: normal;
+    margin-bottom: 12px;
+    font-size: 25px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.features-section .features-card-head-link{
+    color: #221638;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.features-section .features-card-para{
+    color: #6b6b84;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 17px;
+    letter-spacing: normal;
+    font-family: "Nunito", sans-serif;
+}
+
+.features-section .features-dots{
+    display: inline;
+}
+
+.features-section .features-read-more{
+    color: #ff5d22;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    padding-left: 23px;
+    transition: 0.5s;
+    line-height: 1.5;
+}
+
+.features-section .features-read-more i{
+    position: absolute;
+    left: 0;
+    top: 3px;
+    transition: 0.5s;
+    line-height: 1;
+}
+
+.features-section .features-read-more i::before{
+    vertical-align: middle;
+    content: ''; 
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    background: url('/assets/images/servicesRight.png') center/contain no-repeat; 
+}
+
+.features-section .features-read-more:hover{
+    color: #221638;
+    padding-left: 0;
+    padding-right: 8px;
+}
+
+.features-section .features-read-more:hover i{
+    left: 100%;
+    top: 4.5px;
+}
+
+.features-section .features-read-more:hover i::before{
+    background: url('/assets/images/blackright.png') center/contain no-repeat; 
+}
+
+.features-section .features-shape{
+    position: absolute;
+    right: 0;
+    top: -15px;
+    z-index: -1;
+}
+
+.features-section .features-shape-image{
+    position: relative !important;
+    max-width: 230px;
+    min-height: 226px;
+}
+
+.features-section .features-icon-image-two{
+    max-width: 56px;
+    max-height: 50px;
+}
+
+.features-section .features-icon-image-three{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+@media only screen and (max-width: 1199px){
+    .features-section .features-container{
+        max-width: 930px;
+    }
+    .features-section .features-title{
+        max-width: 700px;
+        margin-bottom: 50px;
+    }
+    .features-section .features-head{
+        font-size: 36px;
+    }
+    .features-section .features-card-head{
+        font-size: 23px;
+    }
+    .features-section .features-card-para{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .features-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .features-section .features-container{
+        max-width: 690px;
+    }
+    .features-section .features-title{
+        max-width: 600px;
+        margin-bottom: 45px;
+    }
+    .features-section .features-icon{
+        width: 75px;
+        height: 75px;
+    }
+    .features-section .features-icon-image{
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+    .features-section .features-card-head{
+        font-size: 22px;
+    }
+    .features-section .features-read-more{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .features-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .features-section .features-container{
+        width: -webkit-fill-available;
+    }
+    .features-section .features-title{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    .features-section .features-head{
+        font-size: 27px;
+    }
+    .features-section .features-content-box{
+        clip-path: unset;
+        text-align: center;
+        padding: 30px 20px 35px;
+    }
+    .features-section .features-icon{
+        width: 65px;
+        height: 65px;
+        margin-left: auto;
+        margin-bottom: 20px;
+        margin-right: auto;
+    }
+    .features-section .features-icon-image{
+        max-width: 40px;
+        max-height: 36px;
+    }
+    .features-section .features-card-head{
+        font-size: 20px;
+    }
+    .features-section .features-card-para{
+        font-size: 15px;
+    }
+    .features-section .features-read-more{
+        font-size: 15px;
+    }
+    .features-section .features-read-more i::before{
+        width: 20px;
+        height: 16px;
+    }
+}
+
+@keyframes fadeInUp{
+    0% {
+        opacity: 0;
+        transform: translate3d(0,10%,0);
+    }
+    100% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+

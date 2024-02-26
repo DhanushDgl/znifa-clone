@@ -1,0 +1,19 @@
+.map-section .map-frame {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(229, 227, 223);
+  }
+
+  .map-section .quote-map{
+    width: 100%;
+    background-color: rgb(229, 227, 223);
+    height: 100%;
+   
+}
+.map-section .gmap_canvas{
+    min-height: 500px;
+}
+
+.map-section .mapouter{
+    min-height: 500px;
+}

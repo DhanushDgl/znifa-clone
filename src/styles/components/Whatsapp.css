@@ -1,0 +1,40 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+.whatsapp-link{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 40px;
+    right: 70px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.whatsapp-link .whatsapp-box i{
+    font-size: 65px;
+    margin-right: 20px;
+    height: 95px;
+    line-height: 45px;
+    color: #fff;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-top: 5px;
+    margin-left: -1px;
+}
+
+.whatsapp-link .whatsapp-box i::before{
+    content: "\f232";
+    font-size: 65px;
+    line-height: 45px;
+}
+
+@media only screen and (max-width: 767px){
+    .whatsapp-link{
+        right: 40px;
+    }
+}
